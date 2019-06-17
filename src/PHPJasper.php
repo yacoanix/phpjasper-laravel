@@ -108,7 +108,7 @@ class PHPJasper
 
         $this->command .= ' process ';
         $this->command .= "\"$input\"";
-        $this->command .= ' -o ' . "\"$output\"";
+        if (!in_array('print', $options['format'])) $this->command .= ' -o ' . "\"$output\"";
 
         $this->command .= ' -f ' . join(' ', $options['format']);
         if ($options['params']) {
@@ -142,13 +142,15 @@ class PHPJasper
             if ($options['resources']) {
                 $this->command .= " -r {$options['resources']}";
             }
+        }
 
+        if (in_array('print', $options['format'])) {
             if ($options['printer_name']) {
                 $this->command .= " -N '{$options['printer_name']}'";
             }
-
-            $this->command = $this->command . ' 2>&1';
         }
+
+        $this->command = $this->command . ' 2>&1';
 
         return $this;
     }
@@ -164,7 +166,8 @@ class PHPJasper
             'params' => [],
             'resources' => false,
             'locale' => false,
-            'db_connection' => []
+            'db_connection' => [],
+            'printer_name' => null,
         ];
 
         return array_merge($defaultOptions, $options);
