@@ -39,7 +39,7 @@ class PHPJasper
     /**
      * @var array
      */
-    protected $formats = ['pdf', 'rtf', 'xls', 'xlsx', 'docx', 'odt', 'ods', 'pptx', 'csv', 'html', 'xhtml', 'xml', 'jrprint'];
+    protected $formats = ['pdf', 'rtf', 'xls', 'xlsx', 'docx', 'odt', 'ods', 'pptx', 'csv', 'html', 'xhtml', 'xml', 'jrprint', 'print'];
 
     /**
      * PHPJasper constructor
@@ -142,7 +142,11 @@ class PHPJasper
             if ($options['resources']) {
                 $this->command .= " -r {$options['resources']}";
             }
-            
+
+            if ($options['printer_name']) {
+                $this->command .= " -N '{$options['printer_name']}'";
+            }
+
             $this->command = $this->command . ' 2>&1';
         }
 

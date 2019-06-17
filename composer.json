@@ -1,5 +1,5 @@
 {
-  "name": "geekcom/phpjasper-laravel",
+  "name": "santanaborja/phpjasper-laravel",
   "description": "A PHP report generator",
   "license": "MIT",
   "keywords": [
@@ -9,8 +9,8 @@
   ],
   "authors": [
     {
-      "name": "Daniel Rodrigues Lima",
-      "email": "danielrodrigues-ti@hotmail.com",
+      "name": "Borja Santana Matos",
+      "email": "santanaborja@gmail.com",
       "role": "lead"
     }
   ],
