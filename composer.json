@@ -1,5 +1,5 @@
 {
-  "name": "santanaborja/phpjasper-laravel",
+  "name": "2codersstudio/phpjasper-laravel",
   "description": "A PHP report generator",
   "license": "MIT",
   "keywords": [
@@ -9,8 +9,8 @@
   ],
   "authors": [
     {
-      "name": "Borja Santana Matos",
-      "email": "santanaborja@gmail.com",
+      "name": "2Coders Studio",
+      "email": "info@2coders.com",
       "role": "lead"
     }
   ],
