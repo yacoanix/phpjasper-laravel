@@ -1,5 +1,5 @@
 {
-  "name": "2codersstudio/phpjasper-laravel",
+  "name": "yacoanix/phpjasper-laravel",
   "description": "A PHP report generator",
   "license": "MIT",
   "keywords": [
@@ -9,8 +9,8 @@
   ],
   "authors": [
     {
-      "name": "2Coders Studio",
-      "email": "info@2coders.com",
+      "name": "yacoanix",
+      "email": "aymedeyacoan@gmail.com",
       "role": "lead"
     }
   ],
